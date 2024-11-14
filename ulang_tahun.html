@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulang Tahun</title>
+    <style>
+        /* Styling untuk container utama */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #F5D5C0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling untuk kotak pesan */
+        .message-box {
+            background-color: #FFE3C5;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling untuk ikon wajah di bagian atas */
+        .icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        /* Styling untuk teks utama */
+        .main-text {
+            font-size: 16px;
+            color: #5B2C20;
+            margin: 20px 0;
+        }
+
+        /* Styling untuk tombol OK */
+        .ok-button {
+            background-color: #8A5A44;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .ok-button:hover {
+            background-color: #714335;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <div class="icon">😊</div>
+        <div class="main-text">Coba tebak deh siapa yang hari ini ulang taun?</div>
+        <button class="ok-button" onclick="showMessage()">OK</button>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan pesan saat tombol OK ditekan
+        function showMessage() {
+            alert("Selamat ulang tahun!");
+        }
+    </script>
+
+</body>
+</html>

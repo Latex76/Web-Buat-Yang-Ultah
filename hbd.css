@@ -1,0 +1,137 @@
+/* Styling untuk container utama */
+body {
+    display: flex;
+    align-items: center; /* Vertikal center */
+    justify-content: center; /* Horizontal center */
+    height: 100vh; /* Menggunakan tinggi penuh layar */
+    margin: 0;
+    background-color: #F5D5C0;
+    font-family: Arial, sans-serif;
+    flex-direction: column; /* Konten disusun secara vertikal */
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Container border-box */
+.border-box {
+    width: 339px;
+    padding: 0px;
+    background-color: black;
+    border: 2px solid #00008B;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Memastikan bahwa ini adalah container flex */
+    flex-direction: column; /* Konten berada dalam kolom vertikal */
+    justify-content: center; /* Agar konten di dalam box terpusat */
+    align-items: center; /* Agar semua elemen berada di tengah secara horizontal */
+}
+
+/* Title bar style - lebih mirip dengan title bar aplikasi desktop */
+.title-bar {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(135deg, #00008B, #ADD8E6);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+    margin-top: -10px;  /* Geser title bar ke atas */
+    margin-left: -10px;  /* Geser title bar ke kiri */
+}
+
+/* Close button style */
+.close-btn {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+    background-color: #f05a3c;
+}
+
+/* Styling untuk kotak pesan */
+.message-box {
+    background-color: white;
+    border-radius: 11px;
+    width: 100%; /* Agar lebar box menyesuaikan dengan container */
+    max-width: 319px; /* Membatasi lebar box menjadi maksimal 320px */
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Styling untuk ikon wajah di bagian atas */
+.icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk teks utama */
+.main-text {
+    font-size: 16px;
+    color: #5B2C20;
+    margin: 20px 0;
+}
+
+/* Styling untuk tombol OK */
+.ok-button {
+    background-color: #ADD8E6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ok-button:hover {
+    background-color: #714335;
+}
+
+/* Styling untuk input text di Message Box 3 */
+#userName {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Styling untuk pesan kesalahan */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
+}
+/* Styling untuk textarea di Message Box 6 */
+#userMessage {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none; /* Membatasi ukuran area teks */
+    min-height: 100px; /* Tinggi minimum area teks */
+}
+
+/* Styling untuk tombol OK yang dinonaktifkan */
+.ok-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
