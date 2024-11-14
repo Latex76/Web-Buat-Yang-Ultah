@@ -103,7 +103,7 @@ function sendMessage() {
     var waNumber = "+62 838-6211-6142";  // Ganti dengan nomor WhatsApp asli
 
     // Menambahkan tanda khusus di awal pesan
-    var prefixedMessage = "[Pesan dari Website Ulang Tahun] " + userMessage;
+    var prefixedMessage = "[Pesan dari Website ULTAH] " + userMessage;
 
     // Membuat URL untuk mengirim pesan melalui WhatsApp
     var messageUrl = "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(prefixedMessage);
